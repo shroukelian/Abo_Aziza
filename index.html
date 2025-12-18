@@ -268,9 +268,20 @@
     <!-- Scripts -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="script.js"></script>
-    <script>
-        AOS.init(); // تفعيل الأنيميشن
-    </script>
+  <script>
+    AOS.init({
+        // 1. الإعدادات العامة
+        duration: 1000,    // مدة الحركة (ثانية واحدة) عشان تكون ناعمة
+        easing: 'ease-in-out', // نوع الحركة
+        once: false,       // false = الحركة تتكرر كل ما تطلعي وتنزلي (زي ما طلبتي)
+        mirror: true,      // true = الحركة تشتغل وانتي طالعة لفوق كمان
+        
+        // 2. حل مشاكل الموبايل
+        offset: 50,        // يبدأ الحركة بدري شوية عشان العنصر مايختفيش فجأة
+        delay: 0,          // بدون تأخير
+        anchorPlacement: 'top-bottom', // يبدأ لما الجزء العلوي من العنصر يلمس أسفل الشاشة
+    });
+</script>
 </body>
 
 </html>

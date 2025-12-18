@@ -512,3 +512,24 @@ body {
         top: 60px; /* تبدأ بعد الهيدر مباشرة */
     }
 }
+/* =========================================
+   1. GLOBAL RESET & FIX OVERFLOW
+   ========================================= */
+html, body {
+    overflow-x: hidden !important; /* يمنع السكرول العرضي تماماً */
+    width: 100%;
+    position: relative;
+    scroll-behavior: smooth;
+}
+
+/* ضمان أن الصور لا تخرج عن عرض الشاشة */
+img, video {
+    max-width: 100%;
+    height: auto;
+}
+
+/* إصلاح للحاويات عشان الأنيميشن */
+section, header, footer {
+    overflow: hidden; /* أي انيميشن يخرج برا السكشن يختفي */
+    position: relative;
+}
