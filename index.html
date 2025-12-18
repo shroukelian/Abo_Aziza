@@ -6,15 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>إنجاز | لتنسيق الحدائق والديكور الخارجي</title>
 
-    <!-- خطوط عربية (Cairo) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&display=swap" rel="stylesheet">
 
-    <!-- مكتبة الأيقونات -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
-    <!-- مكتبة الأنيميشن (AOS) -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <link rel="stylesheet" href="style.css">
@@ -25,24 +22,21 @@
     <!-- Header / Navbar -->
     <nav class="navbar">
         <div class="container">
-            <!-- اللوجو واسم المؤسسة -->
             <a href="#" class="logo">
                 <img src="images/WhatsApp_Image_2025-12-18_at_2.34.05_PM-removebg-preview.png" alt="Abo Aziza Logo">
                 <span style="font-size:xx-large;">مؤسسة إنجاز</span>
             </a>
 
-            <!-- روابط التنقل (مربوطة بـ ID كل سكشن) -->
             <ul class="nav-links">
                 <li><a href="#home">الرئيسية</a></li>
                 <li><a href="#about">من نحن</a></li>
                 <li><a href="#services">خدماتنا</a></li>
-                <li><a href="#process">كيف نعمل</a></li> <!-- قسم خطوات العمل -->
-                <li><a href="#gallery-video">أعمالنا </a></li> <!-- قسم اليوتيوب -->
-                <li><a href="#reviews">آراء العملاء</a></li> <!-- قسم التقييمات -->
+                <li><a href="#process">كيف نعمل</a></li> 
+                <li><a href="#gallery-video">أعمالنا </a></li> 
+                <li><a href="#reviews">آراء العملاء</a></li> 
                 <li><a href="#contact" class="btn-nav">اتصل بنا</a></li>
             </ul>
 
-            <!-- زر القائمة للموبايل -->
             <div class="menu-toggle">
                 <i class="fas fa-bars"></i>
             </div>
@@ -70,7 +64,6 @@
     <section id="about" class="section-padding">
         <div class="container about-grid">
             <div class="about-img" data-aos="fade-left">
-                <!-- صورة تعبر عن تنسيق الحدائق -->
                 <img src="images/about.jpeg" alt="تنسيق حدائق">
             </div>
             <div class="about-text" data-aos="fade-right">
@@ -153,7 +146,6 @@
                 <!-- Video 1 -->
                 <div class="video-card" data-aos="zoom-in">
                     <div class="video-wrapper">
-                        <!-- استبدلي الرابط ده برابط الـ Embed من يوتيوب -->
                         <iframe src="https://www.youtube.com/embed/FRgCfGI6WsI" title="YouTube video" frameborder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                             allowfullscreen></iframe>
@@ -403,16 +395,14 @@
     <script src="script.js"></script>
     <script>
         AOS.init({
-            // 1. الإعدادات العامة
-            duration: 1000,    // مدة الحركة (ثانية واحدة) عشان تكون ناعمة
-            easing: 'ease-in-out', // نوع الحركة
-            once: false,       // false = الحركة تتكرر كل ما تطلعي وتنزلي (زي ما طلبتي)
-            mirror: true,      // true = الحركة تشتغل وانتي طالعة لفوق كمان
+            duration: 1000,   
+            easing: 'ease-in-out', 
+            once: false,      
+            mirror: true,      
 
-            // 2. حل مشاكل الموبايل
-            offset: 50,        // يبدأ الحركة بدري شوية عشان العنصر مايختفيش فجأة
-            delay: 0,          // بدون تأخير
-            anchorPlacement: 'top-bottom', // يبدأ لما الجزء العلوي من العنصر يلمس أسفل الشاشة
+            offset: 50,       
+            delay: 0,         
+            anchorPlacement: 'top-bottom', 
         });
     </script>
 </body>
